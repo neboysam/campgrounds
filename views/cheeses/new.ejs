@@ -1,0 +1,16 @@
+<h2>Add New Cheese</h2>
+
+<form action="/cheeses" method="POST">
+  <div>
+    <label for="title">Title</label>
+    <input type="text" id="title" placeholder="title" name="cheese[title]">
+  </div>
+  <div>
+    <label for="location">Location</label>
+    <input type="text" id="location" placeholder="location" name="cheese[location]">
+  </div>
+  <button>Add Cheese</button>
+  <footer>
+    <a href="/cheeses">All Cheeses</a>
+  </footer>
+</form>

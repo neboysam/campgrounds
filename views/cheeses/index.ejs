@@ -1,0 +1,9 @@
+<h3>Your favourite cheeses:</h3>
+<div>
+  <a href="/cheeses/new">Add New Cheese</a>
+</div>
+<ul>
+  <% cheeses.forEach((cheese) => { %> <!-- for (let cheese of cheeses) {} - cheeses are from index route -->
+    <li><a href="/cheeses/<%= cheese._id %>"><%= cheese.title %></a></li>
+  <% }) %>
+</ul>
