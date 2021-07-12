@@ -1,0 +1,43 @@
+module.exports.descriptors = [
+  'Le Bleu',
+  'Le Cantal',
+  'Le Reblochon',
+  'L’Epoisses',
+  'Le Bouton de Culotte',
+  'Le Mont d’Or',
+  'Le Curé Nantais',
+  'Le Selles-sur-Cher',
+  'Le Brocciu',
+  'Munster',
+  'Le Langres',
+  'Le Maroilles',
+  'Brie de Meaux',
+  'Camembert',
+  'Le Pont l’Evêque',
+  'L’Ossau-Iraty',
+  'L’Edam',
+  'Le Roquefort',
+  'Le Banon'
+]
+
+module.exports.places = [
+  'Auvergne – Rhône-Alpes',
+  'Bourgogne – Franche-Comté',
+  'Bretagne',
+  'Centre – Val de Loire',
+  'Corse',
+  'Grand Est',
+  'Hauts-de-France',
+  'Île de France',
+  'Normandie',
+  'Nouvelle – Aquitaine',
+  'Occitanie',
+  'PACA',
+  'Picardie',
+  'Nord-Pas-de-Calais',
+  'Midi-Pyrénées',
+  'Languedoc-Roussillon',
+  'Limousin',
+  'Poitou-Charentes',
+  'Lorraine'
+]

@@ -1,9 +1,9 @@
 const express = require ("express");
 const mongoose = require("mongoose");
-const Campground = require("./models/campground");
+const Cheese = require("./models/cheese");
 const path = require("path");
 
-mongoose.connect('mongodb://localhost:27017/camp-db', {
+mongoose.connect('mongodb://localhost:27017/cheese', {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true
@@ -13,6 +13,7 @@ mongoose.connection.on("error", console.error.bind(console, "connection error:")
 mongoose.connection.once("open", () => {
   console.log("Database connected");
 });
+
 const app = express();
 
 app.set("view engine", "ejs");
@@ -22,8 +23,10 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-app.get("/makecampground", (req, res) => {
-  const camp = new Campground({title: Campground, })
+app.get("/makecheese", async (req, res) => {
+  const camp = new Cheese({title: "Cheese", price: "15.59"});
+  await camp.save();
+  res.send(camp);
 });
 
 app.listen("8080", () => {
