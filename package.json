@@ -1,5 +1,5 @@
 {
-  "name": "5.-campgrounds",
+  "name": "5.-cheese",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neboysam/campgrounds.git"
+    "url": "git+https://github.com/neboysam/cheese.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/neboysam/campgrounds/issues"
+    "url": "https://github.com/neboysam/cheese/issues"
   },
-  "homepage": "https://github.com/neboysam/campgrounds#readme",
+  "homepage": "https://github.com/neboysam/cheese#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.6",
