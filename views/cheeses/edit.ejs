@@ -1,0 +1,16 @@
+<h2>Edit Selected Cheese</h2>
+
+<form action="/cheeses/<%= cheese._id %>?_method=PUT" method="POST">
+  <div>
+    <label for="title">Title</label>
+    <input type="text" id="title" placeholder="title" name="cheese[title]" value="<%= cheese.title %>">
+  </div>
+  <div>
+    <label for="location">Location</label>
+    <input type="text" id="location" placeholder="location" name="cheese[location]" value="<%= cheese.location %>">
+  </div>
+  <button>Edit Cheese</button>
+</form>
+<footer>
+  <a href="/cheeses">Home</a>
+</footer>
