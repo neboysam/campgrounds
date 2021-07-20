@@ -41,3 +41,9 @@ module.exports.descriptors = [
     'Poitou-Charentes',
     'Lorraine'
   ]
+
+  module.exports.images = [
+    'https://images.unsplash.com/photo-1541696303913-8668e3f7e9fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHwxMDU2MDM4N3x8fHx8fHwxNjI2Nzg2MDYw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080',
+    'https://images.unsplash.com/photo-1516643147509-4b3600367e0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHwxMDU2MDM4N3x8fHx8fHwxNjI2Nzg2MDg1&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080',
+    'https://images.unsplash.com/photo-1480951759438-f39a376462f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHwxMDU2MDM4N3x8fHx8fHwxNjI2Nzg2MDg4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080'
+  ]  

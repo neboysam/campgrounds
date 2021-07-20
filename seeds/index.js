@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const cities = require('./cities');
-const { places, descriptors } = require('./seedHelpers');
+const { places, descriptors, images } = require('./seedHelpers');
 const Cheese = require('../models/cheese');
 
 mongoose.connect('mongodb://localhost:27017/cheese', {
@@ -28,7 +28,8 @@ const seedDB = async () => {
         const cheese = new Cheese({
             location: `${cities[random471].city}, ${cities[random471].admin_name}`,
             title: `${sample(descriptors)} ${sample(places)}`,
-            image: 'https://source.unsplash.com/collection/10560387',
+            //image: 'https://source.unsplash.com/collection/10560387',
+            image: `${sample(images)}`,
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores vero perferendis laudantium, consequuntur voluptatibus nulla architecto, sit soluta esse iure sed labore ipsam a cum nihil atque molestiae deserunt!',
             price
         })
