@@ -1,12 +1,12 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const CheeseSchema = new mongoose.Schema({
-  title: String,
-  price: String,
-  description: String,
-  location: String
+const CheeseSchema = new Schema({
+    title: String,
+    image: String,
+    price: Number,
+    description: String,
+    location: String
 });
 
-const Cheese = mongoose.model("Cheese", CheeseSchema);
-
-module.exports = Cheese;
+module.exports = mongoose.model('Cheese', CheeseSchema);

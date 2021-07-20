@@ -1,6 +1,26 @@
-<h2><%= cheese.title %></h2>
-<h3><%= cheese.location %></h3>
-<p>
-  <a href="/cheeses/<%= cheese._id %>/edit">Edit Cheese</a>
-</p>
-<a href="/cheeses">Home</a>
+<% layout('layouts/boilerplate')%>
+
+<div class="row">
+    <div class="col-6 offset-3">
+        <div class="card mb-3">
+            <img src="<%= cheese.image%>" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><%= cheese.title%></h5>
+                <p class="card-text"><%= cheese.description%></p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-muted"><%= cheese.location%></li>
+                <li class="list-group-item">$<%= cheese.price%>/night</li>
+            </ul>
+            <div class="card-body">
+                <a class="card-link btn btn-info" href="/cheeses/<%=cheese._id%>/edit">Edit</a>
+                <form class="d-inline" action="/cheeses/<%=cheese._id%>?_method=DELETE" method="POST">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+    </div>
+</div>
