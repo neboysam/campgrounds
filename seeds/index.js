@@ -18,16 +18,17 @@ db.once("open", () => {
 
 const sample = array => array[Math.floor(Math.random() * array.length)];
 
+// console.log(cities.length); 471 cities in France
 
 const seedDB = async () => {
     await Cheese.deleteMany({});
     for (let i = 0; i < 50; i++) {
-        const random1000 = Math.floor(Math.random() * 1000);
+        const random471 = Math.floor(Math.random() * 471);
         const price = Math.floor(Math.random() * 20) + 10;
         const cheese = new Cheese({
-            location: `${cities[random1000].city}, ${cities[random1000].state}`,
+            location: `${cities[random471].city}, ${cities[random471].admin_name}`,
             title: `${sample(descriptors)} ${sample(places)}`,
-            image: 'https://source.unsplash.com/collection/483251',
+            image: 'https://source.unsplash.com/collection/10560387',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores vero perferendis laudantium, consequuntur voluptatibus nulla architecto, sit soluta esse iure sed labore ipsam a cum nihil atque molestiae deserunt!',
             price
         })
