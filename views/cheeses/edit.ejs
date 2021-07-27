@@ -2,35 +2,50 @@
 <div class="row">
     <h1 class="text-center">Edit Cheese</h1>
     <div class="col-6 offset-3">
-        <form action="/cheeses/<%=cheese._id%>?_method=PUT" method="POST">
+        <form action="/cheeses/<%=cheese._id%>?_method=PUT" method="POST" novalidate class="validated-form">
             <div class="mb-3">
                 <label class="form-label" for="title">Title</label>
                 <input class="form-control" type="text" id="title" name="cheese[title]"
-                    value="<%=cheese.title %>">
+                    value="<%=cheese.title %>" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="location">Location</label>
                 <input class="form-control" type="text" id="location" name="cheese[location]"
-                    value="<%=cheese.location %>">
+                    value="<%=cheese.location %>" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="image">Image Url</label>
                 <input class="form-control" type="text" id="image" name="cheese[image]"
-                    value="<%=cheese.image %>">
+                    value="<%=cheese.image %>" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="price">Cheese Price</label>
                 <div class="input-group">
                     <span class="input-group-text" id="price-label">$</span>
                     <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
-                        aria-describedby="price-label" name="cheese[price]" value="<%=cheese.price %>">
+                        aria-describedby="price-label" name="cheese[price]" value="<%=cheese.price %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
                 </div>
             </div>
 
             <div class="mb-3">
                 <label class="form-label" for="description">Description</label>
                 <textarea class="form-control" type="text" id="description"
-                    name="cheese[description]"><%= cheese.description%></textarea>
+                    name="cheese[description]" required><%= cheese.description%></textarea>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
             </div>
             <div class="mb-3">
                 <button class="btn btn-info">Update Cheese</button>
